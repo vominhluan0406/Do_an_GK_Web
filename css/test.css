@@ -48,5 +48,8 @@ button {
 }
 .active, .dot:hover {
     background-color: #fff;
-    box-shadow: 0 0 1px 4px #c7c7c7b0;
+    /* box-shadow: 0 0 1px 4px #c7c7c7b0; */
+}
+.classify{
+    padding-top: 1em;
 }
