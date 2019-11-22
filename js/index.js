@@ -3,6 +3,8 @@ var slsanpham = Object.keys(product).length;
 var sanpham = BanChay +","+ XemGanDay+","+ Moi;
 sanpham = sanpham.split(',');
 
+var sildeImgName = Object.keys(slideImg);
+
 i = 1;
 k=0;
 $(document).ready(
@@ -28,6 +30,13 @@ $(document).ready(
                 $(this).children('.product-wid-price').replaceWith('<div class="product-wid-price"><ins> '+ tmp[2]+'.000 VND</ins ></div >');
                 k++;
             }); 
+        });
+        k=0;
+        $('.slider-area .block-slider.block-slider4 #bxslider-home4 li').each(function(){
+            tmp = sildeImgName[k];
+            $(this).children('a').replaceWith('<a href="single-product.html?xe='+tmp.replace(/ /g,'_')+'"><img src="img\/'+ slideImg[tmp]+'" alt="Slide"></a>');
+            k++;
+            if(k==6) k=0;
         });
     });
 
