@@ -31,6 +31,14 @@ $(document).ready(function(){
         $('a', this).replaceWith('<a href="single-product.html?xe='+ XemGanDay[i].replace(/ /g,'_')+'">'+ XemGanDay[i]+'</a>');
         i++;
     });
+    let giaTien = parseFloat(tmp[2]);
+    
+    $('.add_to_cart_button').click(function(){
+        let soluong = $('#numberic').val();
+        console.log(soluong);
+        $('.product-count').text(soluong).css('display', 'block');
+        $('.cart-amunt').text(giaTien*soluong * 1000000 + ' VND');
+    });
 });
 
 // Autocomplete

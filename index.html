@@ -21,13 +21,14 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/product-name.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/shopping-cart.js"></script>
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/all.css">
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -58,7 +59,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="header-right">
                         <ul class="list-unstyled list-inline">
                             <li class="dropdown dropdown-small">
@@ -80,7 +81,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div> <!-- End header area -->
@@ -96,7 +97,8 @@
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href="cart.html">Giỏ hàng - <span class="cart-amunt">20,000,000 VND</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                        <a href="cart.html">Giỏ hàng - <span class="cart-amunt"></span> <i class="fa fa-shopping-cart"></i> <span class="product-count"></span></a>
+                        <button id="emptyCart"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -118,7 +120,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Trang chủ</a></li>
                         <li><a href="shop.html">Cửa hàng</a></li>
-                        <li><a href="single-product.html">Sản phẩm</a></li>
+                        <li><a href="single-product.html?xe=Honda_Winner_X">Sản phẩm</a></li>
                         <li><a href="cart.html">Giỏ hàng</a></li>
                         <li><a href="checkout.html">Thanh toán</a></li>
                         <li><a href="catergory.html">Phụ tùng, bảo dưỡng</a></li>
@@ -168,7 +170,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-promo promo2">
-                        <i class="fa fa-id-card"></i>
+                        <i class="fa fa-cc-discover"></i>
                         <p>Hỗ trợ đăng ký</p>
                     </div>
                 </div>
