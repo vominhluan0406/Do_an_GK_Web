@@ -38,5 +38,24 @@ $(document).ready(
             k++;
             if(k==6) k=0;
         });
+        var popup = document.getElementById("popup");
+
+        /* Show the popup. */
+        popup.classList.remove("hidden");
+
+        /* Fade the popup in */
+        setTimeout(() => popup.classList.add("fade-in"));
+
+        /* Close the popup when a city is selected. */
+        $('#popup').on('mouseleave',function () {
+            /* Fade the popup out */
+            popup.classList.remove("fade-in");
+
+            /* Hide the popup. */
+            setTimeout(() => popup.classList.add("hidden"), 300);
+        });
+        $('#popup').on('click', function () {
+            window.open('event.html');
+        });
     });
 

@@ -17,6 +17,7 @@
     <script src="js/product-name.js"></script>
     <script src="js/shop.js"></script>
     <script src="js/shopping-cart.js"></script>
+    <script src="js/chat-box.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -54,7 +55,6 @@
                     <div class="user-menu">
                         <ul>
                             <li><a href="#"><i class="fa fa-user"></i>Tài khoản</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Yêu thích</a></li>
                             <li><a href="cart.html"><i class="fa fa-user"></i>Giỏ hàng</a></li>
                             <li><a href="checkout.html"><i class="fa fa-user"></i>Thanh toán</a></li>
                             <li><a href="login.html"><i class="fa fa-user"></i>Đăng nhập</a></li>
@@ -131,7 +131,7 @@
                         <li><a href="single-product.html?xe=Honda_Winner_X">Sản phẩm</a></li>
                         <li><a href="cart.html">Giỏ hàng</a></li>
                         <li><a href="checkout.html">Thanh toán</a></li>
-                        <li><a href="#">Phụ tùng, bảo dưỡng</a></li>
+                        <li><a href="event.html">Tin tức</a></li>
                         <li><a href="contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
@@ -206,58 +206,51 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-about-us">
-                        <h2>u<span>Stora</span></h2>
-                        <p>Honda là nhà sản xuất động cơ lớn nhất thế giới của Nhật Bản với số lượng hơn 14 triệu chiếc mỗi năm. Từ năm 2004 hãng
-                        bắt đầu chế tạo động cơ chạy diesel vừa êm vừa không cần bộ lọc nhằm đáp ứng tiêu chuẩn ô nhiễm</p>
+                        <h2>Barcelona<span> Shop</span></h2>
+                        <p>Chúng tôi là chuỗi cửa hàng bán xe máy uy tín, chất lượng hàng đầu tại Việt Nam.</p>
                         <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/groups/ltwebHK12020/" target="_blank"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/channel/UCaqULXPDXdu561DMeWFq5Fw" target="_blank"><i
+                                    class="fa fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
+                        <h2 class="footer-wid-title">Người dùng </h2>
                         <ul>
-                            <li><a href="">My account</a></li>
-                            <li><a href="">Order history</a></li>
-                            <li><a href="">Wishlist</a></li>
-                            <li><a href="">Vendor contact</a></li>
-                            <li><a href="">Front page</a></li>
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="cart.html">Giỏ hàng</a></li>
+                            <li><a href="checkout.html">Thanh toán</a></li>
                         </ul>
                     </div>
                 </div>
-
+    
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
+                        <h2 class="footer-wid-title">Danh mục</h2>
                         <ul>
-                            <li><a href="">Mobile Phone</a></li>
-                            <li><a href="">Home accesseries</a></li>
-                            <li><a href="">LED TV</a></li>
-                            <li><a href="">Computer</a></li>
-                            <li><a href="">Gadets</a></li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="checkout.html">Thanh toán</a></li>
+                            <li><a href="event.html">Tin tức</a></li>
+                            <li><a href="shop.html">Cửa hàng</a></li>
                         </ul>
                     </div>
                 </div>
-
+    
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to
-                            your inbox!</p>
-                        <div class="newsletter-form">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
-                        </div>
+                        <h2 class="footer-wid-title">Liên hệ</h2>
+                        <p>Mọi thắc mắc vui lòng liên hệ</p>
+                        <h3>(+84) - (28) - 38352020</h3>
+                        <h3>Email: banxemay@hcmue.edu.vn</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> <!-- End footer top area -->
     <div class="footer-bottom-area">
         <div class="container">
             <div class="row">
@@ -295,6 +288,20 @@
 
     <!-- Main Script -->
     <script src="js/main.js"></script>
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <button class="open-button" onclick="openForm()">Hỗ trợ online</button>
+    
+    <div class="chat-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Hỗ trợ</h1>
+            <label for="">Vui lòng cho chúng tôi biết thông tin của bạn để tiện trao đổi.</label>
+            <input type="text" placeholder="Tên của bạn*">
+            <input type="text" placeholder="Email*">
+            <textarea placeholder="Nhập..." name="msg" required></textarea>
+            <button type="submit" class="btn">Gửi</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Đóng</button>
+        </form>
+    </div>
 </body>
 
 </html>
